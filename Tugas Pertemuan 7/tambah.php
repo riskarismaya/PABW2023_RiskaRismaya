@@ -38,28 +38,36 @@ if (isset($_POST['tambah'])) {
             </label><br>
           </tr>
           <tr>
-            <td>2.</td>
-            <td>NIM</td>
-            <td>:</td>
-            <td><input type="text" name="nim" required></td>
+            <label>
+              <td>2.</td>
+              <td>NIM</td>
+              <td>:</td>
+              <td><input type="text" name="nim" required></td>
+            </label>
           </tr>
           <tr>
-            <td>3.</td>
-            <td>Email</td>
-            <td>:</td>
-            <td><input type="text" name="email" required></td>
+            <label>
+              <td>3.</td>
+              <td>Email</td>
+              <td>:</td>
+              <td><input type="text" name="email" required></td>
+            </label>
           </tr>
           <tr>
-            <td>4.</td>
-            <td>Jurusan</td>
-            <td>:</td>
-            <td><input type="text" name="jurusan" required></td>
+            <label>
+              <td>4.</td>
+              <td>Jurusan</td>
+              <td>:</td>
+              <td><input type="text" name="jurusan" required></td>
+            </label>
           </tr>
           <tr>
-            <td>5.</td>
-            <td>Foto</td>
-            <td>:</td>
-            <td><input type="text" name="gambar" required></td>
+            <label>
+              <td>5.</td>
+              <td>Foto</td>
+              <td>:</td>
+              <td><input type="text" name="foto" required></td>
+            </label>
           </tr>
         </tbody>
     </table>

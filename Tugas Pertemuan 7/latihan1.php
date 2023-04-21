@@ -3,7 +3,7 @@
 $conn = mysqli_connect('localhost', 'root', '', 'pabw_a22100116');
 
 // Query isi tabel mahasiswa
-$result = mysqli_query($conn, "SELECT * FROM mahasiswa");
+$result = mysqli_query($conn, "SELECT * FROM mhs");
 
 // ubah data ke dalam array
 // $row = mysqli_fetch_row($result); // array numerik
@@ -15,7 +15,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 
 // tampung ke variabel mahasiswa
-$mahasiswa = $rows;
+$mhs = $rows;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,10 +41,10 @@ $mahasiswa = $rows;
     </tr>
 
     <?php $i = 1;
-    foreach ($mahasiswa as $m) : ?>
+    foreach ($mhs as $m) : ?>
       <tr>
         <td><?= $i++; ?></td>
-        <td><img src="img/<?= $m['foto']; ?>" width="60"></td>
+        <td><img src="img/<?= $m['foto']; ?>" width="100"></td>
         <td><?= $m['nim']; ?></td>
         <td><?= $m['nama']; ?></td>
         <td><?= $m['email']; ?></td>

@@ -1,6 +1,6 @@
 <?php
 require 'functions.php';
-$mahasiswa = query("SELECT * FROM mahasiswa");
+$mhs = query("SELECT * FROM mhs");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,10 +26,10 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
     </tr>
 
     <?php $i = 1;
-    foreach ($mahasiswa as $m) : ?>
+    foreach ($mhs as $m) : ?>
       <tr>
         <td><?= $i++; ?></td>
-        <td><img src="img/<?= $m['foto']; ?>" width="60"></td>
+        <td><img src="img/<?= $m['foto']; ?>" width="100"></td>
         <td><?= $m['nama']; ?></td>
         <td>
           <a href="detail.php?id=<?= $m['id']; ?>">lihat detail</a>

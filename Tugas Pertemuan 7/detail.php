@@ -5,7 +5,7 @@ require 'functions.php';
 $id = $_GET['id'];
 
 // query mahasiswa berdasarkan id
-$m = query("SELECT * FROM mahasiswa WHERE id = $id");
+$m = query("SELECT * FROM mhs WHERE id = $id");
 ?>
 <!DOCTYPE html>
 <html lang="en">
